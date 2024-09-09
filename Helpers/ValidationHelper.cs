@@ -18,5 +18,7 @@ namespace MedsoftTask1.Helpers
         {
             return fields.All(field => !string.IsNullOrWhiteSpace(field));
         }
+
+
     }
 }

@@ -22,13 +22,43 @@ namespace MedsoftTask1
             _patientService = patientService;
             _genderService = genderService;
             InitializeComponent();
+
             LoadPatients();
+            dataGridView1.CellFormatting += DataGridView1_CellFormatting;
+        }
+
+
+        private void DataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            
+            if (dataGridView1.Columns[e.ColumnIndex].Name == "Phone" && e.Value != null)
+            {
+                string phoneNumber = e.Value.ToString();
+                if (phoneNumber.Length == 9) 
+                {
+                    e.Value = FormatPhoneNumber(phoneNumber);
+                    e.FormattingApplied = true; 
+                }
+            }
+        }
+
+      
+        private string FormatPhoneNumber(string phoneNumber)
+        {
+            return string.Format("{0}-{1}-{2}", phoneNumber.Substring(0, 3), phoneNumber.Substring(3, 3), phoneNumber.Substring(6, 3));
         }
 
         private void LoadPatients()
         {
             DataTable patientsTable = _patientService.GetPatients();
             dataGridView1.DataSource = patientsTable;
+
+            dataGridView1.Columns["FullName"].HeaderText = "პაციენტის გვარი სახელი"; 
+            dataGridView1.Columns["Dob"].HeaderText = "დაბადების თარიღი";
+            dataGridView1.Columns["GenderName"].HeaderText = "სქესი"; 
+            dataGridView1.Columns["Phone"].HeaderText = "მობილურის ნომერი";
+            dataGridView1.Columns["Address"].HeaderText = "მისამართი";
+           
         }
         private void addButton_Click(object sender, EventArgs e)
         {
@@ -45,10 +75,10 @@ namespace MedsoftTask1
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 int selectedPatientId = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["ID"].Value);
-                AddEditForm editForm = new AddEditForm(_patientService, _genderService, selectedPatientId);  // pass the selected patient ID
+                AddEditForm editForm = new AddEditForm(_patientService, _genderService, selectedPatientId);  
                 if (editForm.ShowDialog() == DialogResult.OK)
                 {
-                    LoadPatients();  // Refresh the list after editing a patient
+                    LoadPatients(); 
                 }
             }
             else
@@ -68,7 +98,7 @@ namespace MedsoftTask1
                 if (confirmation == DialogResult.Yes)
                 {
                     _patientService.DeletePatient(selectedPatientId);
-                    LoadPatients();  // Refresh the list after deletion
+                    LoadPatients();  
                 }
             }
             else

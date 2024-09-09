@@ -89,19 +89,19 @@ namespace MedsoftTask1.Forms
         {
             if (string.IsNullOrWhiteSpace(txtFullName.Text))
             {
-                MessageBox.Show("Full Name is required.");
+                MessageBox.Show("სახელის და გვარის შეყვანა აუცილებელია.");
                 return false;
             }
 
             if (cmbGender.SelectedItem == null)
             {
-                MessageBox.Show("Gender is required.");
+                MessageBox.Show("სქესის შეყვანა აუცილებელია.");
                 return false;
             }
 
             if (!string.IsNullOrWhiteSpace(txtPhone.Text) && !ValidationHelper.IsPhoneNumberValid(txtPhone.Text))
             {
-                MessageBox.Show("Invalid phone number. Phone number must start with 5 and be 9 digits long.");
+                MessageBox.Show("არასწორი ნომერი. ნომრის პირველი ციფრი უნდა იყოს 5 და უნდა შედგებოდეს 9 ციფრისგან.");
                 return false;
             }
 
