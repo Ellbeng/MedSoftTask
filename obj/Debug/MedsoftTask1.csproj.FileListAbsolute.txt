@@ -1,0 +1,15 @@
+C:\Users\SURFACE LAPTOP 3\Desktop\MedsoftTask\MedsoftTask1\obj\Debug\MedsoftTask1.csproj.AssemblyReference.cache
+C:\Users\SURFACE LAPTOP 3\Desktop\MedsoftTask\MedsoftTask1\obj\Debug\MedsoftTask1.csproj.SuggestedBindingRedirects.cache
+C:\Users\SURFACE LAPTOP 3\Desktop\MedsoftTask\MedsoftTask1\obj\Debug\MedsoftTask1.Forms.AddEditForm.resources
+C:\Users\SURFACE LAPTOP 3\Desktop\MedsoftTask\MedsoftTask1\obj\Debug\MedsoftTask1.Form1.resources
+C:\Users\SURFACE LAPTOP 3\Desktop\MedsoftTask\MedsoftTask1\obj\Debug\MedsoftTask1.Properties.Resources.resources
+C:\Users\SURFACE LAPTOP 3\Desktop\MedsoftTask\MedsoftTask1\obj\Debug\MedsoftTask1.csproj.GenerateResource.cache
+C:\Users\SURFACE LAPTOP 3\Desktop\MedsoftTask\MedsoftTask1\obj\Debug\MedsoftTask1.csproj.CoreCompileInputs.cache
+C:\Users\SURFACE LAPTOP 3\Desktop\MedsoftTask\MedsoftTask1\bin\Debug\MedsoftTask1.exe.config
+C:\Users\SURFACE LAPTOP 3\Desktop\MedsoftTask\MedsoftTask1\bin\Debug\MedsoftTask1.exe
+C:\Users\SURFACE LAPTOP 3\Desktop\MedsoftTask\MedsoftTask1\bin\Debug\MedsoftTask1.pdb
+C:\Users\SURFACE LAPTOP 3\Desktop\MedsoftTask\MedsoftTask1\obj\Debug\MedsoftTask1.exe
+C:\Users\SURFACE LAPTOP 3\Desktop\MedsoftTask\MedsoftTask1\obj\Debug\MedsoftTask1.pdb
+C:\Users\SURFACE LAPTOP 3\Desktop\MedsoftTask\MedsoftTask1\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\SURFACE LAPTOP 3\Desktop\MedsoftTask\MedsoftTask1\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\SURFACE LAPTOP 3\Desktop\MedsoftTask\MedsoftTask1\obj\Debug\MedsoftTask1.csproj.CopyComplete
